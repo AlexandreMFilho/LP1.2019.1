@@ -10,7 +10,6 @@ Entrada:  caracteres da string octal.
 
 Saída: string binária + um caracter '\n' + string hexadecimal + '\n'. 
 */
-
 #include <stdio.h>
 #include <string.h>
 
@@ -37,7 +36,7 @@ int main()
 	//Converte o numero Octal preenchendo um array com seus valores binarios.
 	for (i = 0; i <= Tamanho_Octal; i++)
 	{
-		printf("i : %d\n bin %s\n: ", i, binario);
+		//printf("i : %d\n bin %s\n: ", i, binario);
 		if (octal[i] == '0')
 			{ //000
 			binario[(3*i)]		= '0';
@@ -97,20 +96,20 @@ int main()
 	for (j = 0; j <= (Tamanho_Octal -1); j++)
 	{ //A quantidade de digitos da entrada é = a quantidade de 0's a ser adicionado.
 		aux_hexa[j] = '0';
-		printf("aux-hex : %s\n j : %d\n", aux_hexa, j);
+		//printf("aux-hex : %s\n j : %d\n", aux_hexa, j);
 	}
 
 	//Coloca no array aux_hexa os a array com o numero convertido para binario, para divisão e conversao p/ hexa.
 	for (p = 0; p <= ((3 * Tamanho_Octal) + 1); p++)
 	{
 		aux_hexa[(p + Tamanho_Octal)] = binario[p]; //Preenche o array aux_hexa com os binarios de 3 digitos.
-		printf("bin: %s\n p:%d\n aux_hex :%s\n tamBin : %d\n", binario, p,aux_hexa,len2);
+		//printf("bin: %s\n p:%d\n aux_hex :%s\n tamBin : %d\n", binario, p,aux_hexa,len2);
 	}
 
 	//Pega os valores binarios do auxiliar e converte em Hexa no Vetor hexa.
 	for (k = 0; k <= (((3 * Tamanho_Octal) + Tamanho_Octal)/4); k++)
 	{
-		printf("k :%d\n auxHex :%s\n hexa:%s\n",k,aux_hexa, hexa);
+		//printf("k :%d\n auxHex :%s\n hexa:%s\n",k,aux_hexa, hexa);
 		if (aux_hexa[(4 * k)] == '0')
 		{ //0xxx
 
@@ -180,7 +179,7 @@ int main()
 					{
 						hexa[k] = 'F'; //1111
 					}
-					else if (aux_hexa[(4 * k) + 3] == '1')
+					else if (aux_hexa[(4 * k) + 3] == '0')
 					{
 						hexa[k] = 'E'; //1110
 					}
@@ -228,7 +227,8 @@ int main()
 	}
 	//hexa[k*4] == '\0';
 		printf("%s\n", binario);
-		printf("aux-hexa :" "%s\n",aux_hexa);
-		printf("hexa :" "%s\n",hexa);
+		//printf("aux-hexa :" "%s\n",aux_hexa);
+		//printf("hexa :" "%s\n",hexa);
 		printf("%s\n", hexa);
 }
+
