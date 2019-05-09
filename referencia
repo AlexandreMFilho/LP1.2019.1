@@ -16,6 +16,5 @@ int main (){
 
     hexa = Bin_Hex (char fonte);    //transformar string binaria corrigida p hexadecimal.
 
-    printf("%s %s",binario, hexa);
-
+    printf("%s\n%s\n",binario, hexa);
 }
