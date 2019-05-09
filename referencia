@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main (){
+    
+    char octal[11];	//Cria o array a ser armazenada a entrada (N. octal).
+	scanf("%s", octal);
+    
+    char binario[31];
+
+    binario = Oct_Bin (char fonte); //Transformar octal em string binaria 
+    
+    char aux[34];
+    void Por_0 (char * recebe, char * entrega); //colocar 0 na string e prencher com binario
+
+    char hexa[9];
+    hexa = Bin_Hex (char fonte);    //transformar string binaria corrigida p hexadecimal.
+
+    printf("%s %s",binario, hexa);
+
+
+
+}
