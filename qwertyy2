@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void Oct_Bin (char* fonte, char * retorno); //Transformar octal em string binaria.
+    
+/*void Por_0 (char recebe,char * entrega); //colocar 0 na string e prencher com binario.
+
+int Bin_Hex (char fonte);    //transformar string binaria corrigida p hexadecimal.*/
+
+int main (){
+    
+    //#define Tam_octal 11 () ideia().
+
+    char octal[11];     //string octal lida.
+    char binario[31];   // O binario.
+    char aux[34];       //  binario auxiliar que vai virar hexa.
+    int hexa;       //  hexa propriamente dito.
+    	
+    fgets(octal,10,stdin);
+
+    Oct_Bin (octal,binario); //Transformar octal em string binaria.
+    
+//    Por_0 (binario,aux); //colocar 0 na string aux e prencher com binario.
+
+//    hexa = Bin_Hex (aux);     //transformar string binaria corrigida p hexadecimal.
+        printf("%s\n",binario);
+//    printf("%s\n%X\n",binario, hexa);
+}
+
+	void Oct_Bin (char* fonte, char * retorno){
+        int i;
+        retorno[0]='\0';
+    //Converte o numero Octal preenchendo um array com seus valores binarios.
+        for (i = 0; fonte[i]!= '\0'; i++){
+            //printf("i : %d\n bin %s\n: ", i, binario);
+            char j = fonte[i];
+		    switch(j){
+			    case '0': strcat(retorno,"000");    break;
+		        case '1': strcat(retorno,"001");    break;
+		        case '2': strcat(retorno,"010");    break;
+                case '3': strcat(retorno,"011");    break;
+		        case '4': strcat(retorno,"100");    break;
+		        case '5': strcat(retorno,"101");    break;
+		        case '6': strcat(retorno,"110");    break;
+		        case '7': strcat(retorno,"111");    break;
+		    }
+	    } //return retorno;
+    }
+    
+/*    void Por_0 (char recebe,char * entrega){
+        int i;
+        for(i = 0; i<= (((strlen(recebe)-1)/3)%4); i++){
+            entrega[i] = '0';
+        } strcat(entrega,recebe);
+        return entrega;
+    }
+    
+    int Bin_Hex (char fonte){
+        int i,num = 0;
+        for(i = strlen(fonte)-2; i>= 0; i--){
+            char j = fgetc(fonte);
+            if(j == '1')
+                num = (num*2)+1;
+            if(j == '0')
+                num = (num*2);
+        } return num;
+
+    }*/
+    
