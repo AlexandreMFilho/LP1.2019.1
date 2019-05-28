@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <string.h>
+
+char * ler ();
+/*
+char * converter (char * string);
+
+void imprimir(char * string);    
+
+*/
+
+int main(){
+    
+      
+
+    char * c = ler ();
+/*
+    char * str = converter (c);
+
+    };
+
+    imprimir(str);*/
+
+}
+
+    char * ler (){
+        char linha[0];
+        linha[0] = '\0';
+        fgets (linha, strlen(linha), stdin());
+        return linha;
+    };
+/*
+    char * converter (char * string){
+        int i = 0;
+        char modificada[(strlen(string)*2)];
+        modificada[0] = '\0';
+        
+        while (string[i] != '\0'){
+            switch(c){
+                case '\n': modificada[i] ='\\'; modificada[i+1] = 'n'; i++; break;
+                case '\t':  modificada[i] ='\\'; modificada[i+1] = 't'; i++; break;
+                case '\f':  modificada[i] ='\\'; modificada[i+1] = 'f'; i++; break;
+                case '\v':  modificada[i] ='\\'; modificada[i+1] = 'v'; i++; break;
+                case '\r':  modificada[i] ='\\'; modificada[i+1] = 'r'; i++; break;
+                case ' ':  modificada[i] ='\\'; i++; break;
+            }
+            modificada[i] = string[i];
+            i++;
+        }
+    return * modificada;
+    };
+
+    void imprimir(char * string){
+        int i;
+        char c;
+        while(c != '\0'){
+            printf(string[i]);
+            i++;
+        }
+
+    };*/
