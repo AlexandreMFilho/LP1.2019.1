@@ -1,0 +1,3 @@
+P1 	P4 	.pbm 	0–1 (white & black)
+P2 	P5 	.pgm 	0–255 (gray scale)
+P3 	P6 	.ppm 	0–255 (RGB) (colorido)
