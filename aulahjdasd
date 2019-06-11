@@ -1,0 +1,69 @@
+long int inventario[26] = {0,0,0,0,...,0};					
+         A																
+         a																
+	inventario[tolower(palavra[0]) - 'a']++;					
+	inventario[toupper(palavra[0]) - 'A']++;					
+	
+	
+file *arq = fopen("texto.txt","r");
+if (! arq){
+	fprintf(stderr,"Erro ao abrir arquivo\n");
+	exit (-1);
+}
+.
+.
+.
+if(fclose(arq)){
+	fprintf(stderr,"Erro ao fechar o arquivo\n");
+	exit(-2);
+}
+
+// Basicamento o prog ta aqui.
+while(!ferror(arq) && !feof(arq) && fscanf(arq,"%s",palavra)){
+	if(isalpha(palavra[0])){
+		inventario[toupper(palavra[0])-'A')]++;
+	}	
+}
+if(ferror(arq)){
+	fprintf(stderr,"%s","Erro na leitura do arquivo\n");
+	exit(-3);
+}
+
+
+
+for (i = 'A'; i<= 'Z'; i++){
+	printf("%c : %d\n",i,inventario[i]);
+}
+
+
+
+
+
+if (vet+1 <= strlen(x))
+
+
+
+
+
+#include<stdio.h>
+
+double SomaRec(double*, int);
+
+int main(){
+     double Vet[]={1.0,2.0,3.0,4.0,5.0};
+     printf("O somatorio é igual a %f",SomaRec(Vet,5));
+    }
+    
+double SomaRec(double*vet, int x){
+    double num = 0.0;
+    	if(vet[1] <= strlen(vet)){
+      	num = *vet + SomaRec((vet+1),x);
+    	}
+    	else{
+      	return *vet;
+    	}
+    	
+    return num;
+};
+
+
