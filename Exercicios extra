@@ -1,0 +1,18 @@
+Exercícios extras:
+Exercício 1 – Análise das chamadas de funções recursivas
+(a) Modifique a função recursiva Fibonacci para que amesma mostre a quantidade de chamadas recursivas.
+Use variáveis locais estáticas.
+(b) Use um vetor static para armazenar a quantidade dechamadas de Fibonacci para cada valor de n
+
+Exercício 2 – Recursão em string
+Faça uma função recursiva que imprima de trás para a frente o conteúdo de uma string.
+
+
+Exercício 3 – Conversão Arquivo Texto para Binário
+Faça uma função recursiva imprima uma string
+equivalente ao valor octal do número inteiro fornecido
+como entrada para sua função.
+
+
+Exercício 4 – Fload fill
+Faça um programa que rode em modo texto que mostre passo a passo a execução de uma versão recursiva do algoritmo de processamento de imagens fload fill em quatro direções. Maiores informações a respeito do algoritmos podem ser obtidas através do verbete da wikipedia dedicado a este tema.
