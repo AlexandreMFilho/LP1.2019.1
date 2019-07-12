@@ -1,0 +1,34 @@
+TRABALHO PARA NOTA P1 - SUDOKU
+Disponível até: quarta, 28 Fev 2018, 21:00
+Número máximo de arquivos: 1
+Tipo de trabalho: Trabalho individual
+
+Trata-se de um jogo baseado na colocação lógica de números em um quadro de dimensões 9x9. O objetivo do jogo é a colocação de números de 1 a 9 em cada uma das células vazias numa grade de 9x9, constituída por 3x3 subgrades chamadas regiões. O quebra-cabeça contém algumas pistas iniciais, que são números inseridos em algumas células, de maneira a permitir uma indução ou dedução dos números em células que estejam vazias. Cada coluna, linha e região só pode ter um número de cada um dos 1 a 9. Resolver o problema requer apenas raciocínio lógico e algum tempo.
+
+A figura a seguir apresenta um exemplo de quadro de Sudoku.
+
+Ver imagem.
+
+Seu programa deve receber como entrada uma representação em texto do quadro do Sudoku e como resultado deve apresentar na saída uma representação em modo texto da sua solução. Tal representação em texto deve conter 9 linhas cada uma com 9 caracteres (excetuando-se os caracteres '\n' e '\0'). Cada coluna deve conter um algarismo de 1 a 9, sendo que o caracter espaço deve ser usado para indicar uma célula em branco.  Neste esquema de representação, o quadro anterior será fornecido da seguinte forma:
+
+53  7    \n
+6  195   \n
+ 98    6 \n
+8   6   3\n
+4  8 3  1\n
+7   2   6\n
+ 6    28 \n
+   419  5\n
+    8  79\n
+
+E o respectivo resultado produzido pelo programa deve ser enviado como:
+
+534678912\n
+672195348\n
+198342567\n
+859761423\n
+426853791\n
+713924856\n
+961537284\n
+287419635\n
+345286179\n
